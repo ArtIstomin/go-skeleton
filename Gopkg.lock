@@ -97,6 +97,7 @@
   revision = "03be101463868edc5a81f094fc68a5f6c1b5503a"
 
 [[projects]]
+  branch = "master"
   name = "github.com/kataras/iris"
   packages = [
     ".",
@@ -126,8 +127,7 @@
     "middleware/recover",
     "view"
   ]
-  revision = "c022b7a71255aef4412c06540ee9dfacd36b03f8"
-  version = "v10.6.4"
+  revision = "e1e309c0fe31acda872cdf4833ca8402034cbee2"
 
 [[projects]]
   branch = "master"
@@ -273,6 +273,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "6d1e239711953eadb221e68b5a4a655a04f1e6dfe182856c78c1e3bc968cf5de"
+  inputs-digest = "c5ec9f05978bb62fcfc395ee23159b23a135a4bd50f56db661c5d68aa7370b80"
   solver-name = "gps-cdcl"
   solver-version = 1

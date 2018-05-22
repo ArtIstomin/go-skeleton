@@ -1,6 +1,8 @@
 package app
 
 import (
+	"fmt"
+
 	middleware "github.com/artistomin/friend4me/app/middlewares"
 	route "github.com/artistomin/friend4me/app/routes"
 	"github.com/gobuffalo/envy"
@@ -9,7 +11,7 @@ import (
 
 //Start application
 func Start() {
-	port := (":" + envy.Get("PORT", "3000"))
+	port := fmt.Sprintf(":%s", envy.Get("PORT", "3000"))
 	app := iris.New()
 
 	middleware.Bind(app)
