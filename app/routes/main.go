@@ -1,12 +1,14 @@
 package route
 
 import (
+	"github.com/gobuffalo/envy"
 	"github.com/kataras/iris"
 )
 
 // Bind routes to application
 func Bind(app *iris.Application) {
-	router := app.Party("/api")
+	prefix := envy.Get("API_PREFIX", "/api")
+	router := app.Party(prefix)
 
 	health(router)
 }
